@@ -150,6 +150,13 @@
             animation: slideUp 1s ease forwards 0.9s;
         }
 
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
         .cta-button {
             display: inline-block;
             padding: 12px 30px;
@@ -168,6 +175,27 @@
             transform: translateY(-3px);
             box-shadow: 0 12px 35px rgba(96, 165, 250, 0.4);
             background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+        }
+
+        .resume-button {
+            display: inline-block;
+            padding: 12px 30px;
+            background: transparent;
+            color: #60a5fa;
+            text-decoration: none;
+            border: 2px solid #60a5fa;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            opacity: 0;
+            animation: slideUp 1s ease forwards 1.3s;
+        }
+
+        .resume-button:hover {
+            background: #60a5fa;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(96, 165, 250, 0.3);
         }
 
         @keyframes slideUp {
@@ -294,6 +322,10 @@
             font-size: 0.9rem;
             font-weight: 500;
             box-shadow: 0 2px 8px rgba(96, 165, 250, 0.3);
+        }
+
+        .skill-tag.basic {
+            background: linear-gradient(45deg, #22c55e, #16a34a);
         }
 
         /* Experience Section */
@@ -496,6 +528,11 @@
             .section-title {
                 font-size: 2rem;
             }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
         }
 
         /* Scroll Animations */
@@ -539,7 +576,10 @@
                 and healthcare device integration. Proven ability to rapidly master new technologies 
                 and deliver innovative solutions across diverse platforms.
             </p>
-            <a href="#contact" class="cta-button">Get In Touch</a>
+            <div class="hero-buttons">
+                <a href="#contact" class="cta-button">Get In Touch</a>
+                <a href="https://cyra25.github.io/chaw_su_thaw_tar/" target="_blank" class="resume-button">View Full Portfolio</a>
+            </div>
         </div>
     </section>
 
@@ -573,7 +613,7 @@
                         <div>Years Experience</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-number">10+</div>
+                        <div class="stat-number">11+</div>
                         <div>Technologies Mastered</div>
                     </div>
                     <div class="stat-item">
@@ -611,6 +651,15 @@
                         <span class="skill-tag">BLE Integration</span>
                         <span class="skill-tag">API Integration</span>
                         <span class="skill-tag">UI/UX Design</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Database & Data Management</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag basic">MySQL (Basic)</span>
+                        <span class="skill-tag">Microsoft Access</span>
+                        <span class="skill-tag">SPSS</span>
+                        <span class="skill-tag">Data Analysis</span>
                     </div>
                 </div>
                 <div class="skill-category">
@@ -688,173 +737,3 @@
                 <div class="project-card">
                     <div class="project-header">
                         <div class="project-title">Healthcare Android Applications</div>
-                    </div>
-                    <div class="project-content">
-                        <p>Developed comprehensive Android applications that communicate with Bluetooth peripheral medical devices including thermometers, weight scales, and blood pressure monitors. Implemented reliable data transfer and synchronization between mobile applications and health measurement devices.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Android Studio</span>
-                            <span class="tech-tag">Java</span>
-                            <span class="tech-tag">Bluetooth LE</span>
-                            <span class="tech-tag">API Integration</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-title">Embedded Systems Development</div>
-                    </div>
-                    <div class="project-content">
-                        <p>Developed firmware for microcontrollers integrated with various peripherals. Created robust solutions for hardware-software communication, ensuring real-time operation and system reliability with comprehensive technical documentation.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Embedded C</span>
-                            <span class="tech-tag">Microcontrollers</span>
-                            <span class="tech-tag">I2C</span>
-                            <span class="tech-tag">SPI</span>
-                            <span class="tech-tag">UART</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-title">Linux-based Development</div>
-                    </div>
-                    <div class="project-content">
-                        <p>Built and tested Linux-based software solutions for hardware validation and system diagnostics. Modified drivers on Ubuntu Linux to enable hardware-software compatibility and resolved technical issues in embedded environments.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Ubuntu Linux</span>
-                            <span class="tech-tag">Driver Development</span>
-                            <span class="tech-tag">System Diagnostics</span>
-                            <span class="tech-tag">Hardware Integration</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-title">PC Software & Test Automation</div>
-                    </div>
-                    <div class="project-content">
-                        <p>Created PC-based tools and automated test scripts for hardware validation and debugging. Streamlined testing processes to improve efficiency and reduce errors during device validation with comprehensive documentation.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">C#</span>
-                            <span class="tech-tag">VB.NET</span>
-                            <span class="tech-tag">Test Automation</span>
-                            <span class="tech-tag">Quality Assurance</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-content fade-in">
-                <h2 class="section-title">Let's Connect</h2>
-                <p style="font-size: 1.2rem; margin-bottom: 2rem;">
-                    Ready to discuss how my adaptability and technical expertise can contribute to your next project? 
-                    I'm always excited to explore new challenges and technologies.
-                </p>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <h3>📧 Email</h3>
-                        <a href="mailto:chawsuthawtar.cyra@gmail.com">chawsuthawtar.cyra@gmail.com</a>
-                    </div>
-                    <div class="contact-item">
-                        <h3>📱 Phone</h3>
-                        <a href="tel:+6596770701">+65 9677 0701</a>
-                    </div>
-                    <div class="contact-item">
-                        <h3>💼 LinkedIn</h3>
-                        <a href="https://www.linkedin.com/in/chawsuthawtar" target="_blank">linkedin.com/in/chawsuthawtar</a>
-                    </div>
-                    <div class="contact-item">
-                        <h3>📍 Location</h3>
-                        <p>Singapore</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Chaw Su Thaw Tar. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script>
-        // Navbar scroll effect
-        window.addEventListener('scroll', function() {
-            const navbar = document.getElementById('navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Fade in animation on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, observerOptions);
-
-        // Observe all fade-in elements
-        document.querySelectorAll('.fade-in').forEach(el => {
-            observer.observe(el);
-        });
-
-        // Add some interactive hover effects
-        document.querySelectorAll('.skill-category, .project-card, .experience-item').forEach(card => {
-            card.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-8px) scale(1.02)';
-            });
-            
-            card.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0) scale(1)';
-            });
-        });
-
-        // Add typing effect to hero subtitle
-        const subtitle = document.querySelector('.hero .subtitle');
-        const text = subtitle.textContent;
-        subtitle.textContent = '';
-        
-        setTimeout(() => {
-            let i = 0;
-            const typeInterval = setInterval(() => {
-                if (i < text.length) {
-                    subtitle.textContent += text.charAt(i);
-                    i++;
-                } else {
-                    clearInterval(typeInterval);
-                }
-            }, 100);
-        }, 1500);
-    </script>
-</body>
-</html>
